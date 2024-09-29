@@ -1,0 +1,282 @@
+:root{
+	--green-color: #659A1F;
+	--dark-green: #2e4d05;
+	--dark-gray: #333;
+}
+
+.hero{
+	padding: 5rem 0;
+	margin-bottom: 7rem;
+	text-align: center;
+}
+
+.hero__naming{
+	width: 150px;
+	padding: .5rem 0;
+	margin-bottom: 50px;
+	border: 1px solid lightgrey;
+	border-radius: 10px;
+	color: var(--dark-gray);
+}
+
+.hero__title{
+	max-width: 600px;
+	margin-bottom: 30px;
+	font-size: 74px;
+	font-weight: 500;
+	color: #000;
+	line-height: .9;
+}
+
+.green{
+	color: var(--green-color);
+}
+
+.mood{
+	padding: 5rem 0;
+	margin-bottom: 3rem;
+	text-align: center;
+}
+
+.mood__cards{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	padding: 0 5rem;
+	margin: 0 auto;
+}
+
+.card{
+	width: 550px;
+	display: flex;
+	align-items: center;
+	padding: 2rem 3rem;
+	margin-bottom: 2rem;
+	background:#fff;
+	border: 1px solid lightgrey;
+	border-radius: 15px;
+	box-shadow: 3px 3px 10px lightgray;
+	transition-property: background, border, box-shadow, color;
+	transition-duration: .3s;
+	transition-timing-function: ease-in-out;
+	cursor: pointer;
+}
+
+.card:not(:nth-child(2n)){
+	margin-right: 2rem;
+}
+
+.blue__card .card__title{
+	color: rgb(87, 170, 184);
+}
+
+.card__img{
+	width: 200px;
+	height: 200px;
+	margin-right: 1rem;
+	border-radius: 10px;
+	background: no-repeat center/cover url('/img/blue-matcha.jpg');
+}
+
+.card__text{
+	max-width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.card__title{
+	margin-bottom: 10px;
+	font-size: 26px;
+	font-weight: 500;
+	color: var(--green-color);
+}
+
+.card__description{
+	margin-bottom: 20px;
+	font-size: 16px;
+	color: #000;
+	font-weight: 500;
+}
+
+.card__link{
+	text-decoration: none;
+	color: #000;
+}
+
+.green__card:hover{
+	background: rgb(108, 175, 108);
+	border: 1px solid rgb(108, 175, 108);
+	box-shadow: 3px 3px 15px rgb(105, 149, 105);
+}
+
+.blue__card:hover{
+	background: rgb(114, 190, 204);
+	border: 1px solid rgb(114, 190, 204);
+	box-shadow: 3px 3px 15px rgb(114, 190, 204);
+}
+
+.card:hover .card__title,.card:hover .card__description,.card:hover .card__link{
+	color: #fff;
+}
+
+
+.section__info{
+	text-align: center;
+	padding: 3rem 3rem;
+}
+
+.info__title{
+	max-width: 500px;
+}
+
+.info__text{
+	max-width: 880px;
+	line-height: 1.6;
+	margin-bottom: 10rem;
+}
+
+.info__benefits{
+	display: flex;
+	flex-wrap: wrap;
+	align-items:center;
+}
+
+.info__article{
+	max-width: 350px;
+	margin-bottom: 2rem;
+}
+
+.info__article:not(:nth-child(3n)){
+	margin-right: 3rem;
+}
+
+.article__title{
+	font-size: 18px;
+	font-weight: 500;
+	color: var(--green-color);
+	margin-bottom: 1.5rem;
+}
+
+.article__text{
+	line-height: 1.5;
+}
+
+.section__menu{
+	background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(101,154,31,1) 50%, rgba(255,255,255,1) 100%);
+	filter: blur(50%);
+	padding-top: 10rem;
+	padding-bottom: 7rem;
+}
+
+.menu__title, .menu__text{
+	color: #fff;
+}
+
+.menu__text{
+	max-width: 520px;
+	line-height: 1.7;
+	margin-bottom: 7rem;
+}
+
+.menu__cards{
+	display: flex;
+	align-items: center;
+	flex-wrap:wrap;
+	margin-bottom: 3rem;
+}
+
+.menu__item{
+	max-width: 400px;
+	background-color: #fff;
+	border-radius: 10px;
+	margin-bottom: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem;
+}
+
+.menu__item:not(:nth-child(3n)){
+	margin-right: 2rem;
+}
+
+.menu__img{
+	margin-bottom: 1rem;
+}
+
+.menu__icon{
+	width: 300px;
+	height: 300px;
+}
+
+.item__title{
+	font-size: 24px;
+	font-weight: 500;
+	color: #000;
+	margin-bottom: 1rem;
+}
+
+.item__desc{
+	font-weight: 400;
+	color: gray;
+}
+
+.section__adv{
+	margin-top: 5rem;
+	margin-bottom: 10rem;
+}
+
+.adv__container{
+	background: var(--green-color);
+	border-radius: 20px;
+	padding: 1rem 5rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.adv__info{
+	max-width: 420px;
+	margin: 1rem 0 1rem 3rem;
+}
+
+.adv__title{
+	color: #fff;
+}
+
+.adv__text{
+	color: #fff;
+	line-height: 1.5;
+}
+
+.adv__btn{
+	background: #fff;
+	border: 1px solid #fff;
+	color: var(--dark-gray);
+}
+
+.adv__btn:hover{
+	background: transparent;
+	border: 1px solid #fff;
+	color: #fff;
+}
+
+.adv__btn:active{
+	background: var(--dark-green);
+	border: 1px solid var(--dark-green);
+}
+
+
+.adv__img{
+	width: 400px;
+	height: 300px;
+	filter: brightness(120%);
+	border-radius:10px;
+}
+
+

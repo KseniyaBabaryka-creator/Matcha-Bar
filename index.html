@@ -4,24 +4,31 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Matcha Bar</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 	<header class="header">
-		<div class="container">
+		<div class="container header__container">
 			<div class="logo">
-				<img src="img/logo.png" class="logo__img"></img>
+				<a href="index.html" class="header__link">
+					<img src="img/logo.png" class="logo__img"></img>
+				</a>
 			</div>
 	
 			<nav class="nav">
 				<ul class="nav__list">
-					<li class="nav__item"><a href="#">Menu</a></li>
-					<li class="nav__item"><a href="#">About Us</a></li>
-					<li class="nav__item"><a href="#">Shop</a></li>
-					<li class="nav__item"><a href="#">Contact</a></li>
+					<li class="nav__item"><a class="nav__link page" href="#">Home</a></li>
+					<li class="nav__item"><a class="nav__link" href="#">Menu</a></li>
+					<li class="nav__item"><a class="nav__link" href="#">Shop</a></li>
+					<li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
 				</ul>
 			</nav>
 	
-			<a class="header__btn btn">order now</a>
+			<a class="header__btn btn">Order Now</a>
 		</div>
 	</header>
 
@@ -29,36 +36,37 @@
 		<section class="hero">
 			<div class="container">
 				<div class="hero__naming">Matcha Bar</div>
-				<h2 class="header__title"><span class="green">Matcha</span> is always a good idea</h2>
+				<h2 class="hero__title"><span class="green">Matcha</span> is always a good idea</h2>
 				<p class="hero__text text">Start your day with a matcha-infused smile.</p>
 				<a href="#" class="hero__btn btn">Get Matcha</a>
 			</div>
 		</section>
 
+		<div class="circle"></div>
+
 		<section class="mood">
-			<div class="container">
+			<div class="mood__container">
 				<h3 class="mood__title title">Choose your mood</h3>
 				<p class="mood__text text">What vibe do you feel today?</p>
 				<div class="mood__cards">
 					
 					<div class="green__card card">
-						<img src="" alt="" class="card__img">
+						<div class="card__img"></div>
 						<div class="card__text">
-							<h5 class="card__title">everyday matcha izumi</h5>
+							<h5 class="card__title">Everyday Matcha Izumi</h5>
 							<p class="card__description">A classic matcha blend for everyday enjoyment</p>
 							<a href="#" class="card__link">Order now →</a>
 						</div>
 					</div>
 
 					<div class="blue__card card">
-						<img src="" alt="" class="card__img">
+						<div src="" alt="" class="card__img"></div>
 						<div class="card__text">
 							<h5 class="card__title">Butterfly Pea Flower Powder</h5>
-							<p class="card__description">vibrant color, natural energy, and antioxidants in every cup</p>
+							<p class="card__description">Vibrant color, natural energy, and antioxidants in every cup</p>
 							<a href="#" class="card__link">Order now →</a>
 						</div>
 					</div>
-
 				</div>
 			</div>
 		</section>
@@ -96,23 +104,29 @@
 		<section class="section__menu">
 			<div class="container">
 				<h3 class="menu__title title">Matcha</h3>
-				<p class="menu__text text">Energizing your day, one gulp a time. Yet initially,Matcha - because priorities count</p>
+				<p class="menu__text text">Energizing your day, one gulp a time. Yet initially, Matcha - because priorities count</p>
 
 				<div class="menu__cards">
 					<div class="menu__item">
-						<img src="" alt="" class="menu__img">
+						<div class="menu__img">
+							<img src="img/straw.jpg" alt="" class="menu__icon">
+						</div>
 						<p class="item__title">Strawberry Matcha Latte</p>
 						<p class="item__desc">Perfect blend of creamy matcha and sweet strawberry for a refreshing, flavorful treat.</p>
 					</div>
 
 					<div class="menu__item">
-						<img src="" alt="" class="menu__img">
+						<div class="menu__img">
+							<img src="img/classic.jpg" alt="" class="menu__icon">
+						</div>
 						<p class="item__title">Classic Matcha Latte</p>
 						<p class="item__desc">Rich matcha blended with creamy milk for a soothing, revitalizing drink.</p>
 					</div>
 
-					<div class="menu__item"></div>
-						<img src="" alt="" class="menu__img">
+					<div class="menu__item">
+						<div class="menu__img">
+							<img src="img/frap.jpg" alt="" class="menu__icon">
+						</div>
 						<p class="item__title">Creamy Matcha Frapuccino</p>
 						<p class="item__desc">A refreshing blend of smooth matcha and rich cream, topped with whipped cream.</p>
 					</div>
@@ -128,35 +142,39 @@
 				<div class="adv__info">
 					<h3 class="adv__title title">We're perfect match-a</h3>
 					<p class="adv__text text">Sipping our matcha lattes because we're a perfect Match-a made in beverage heaven.</p>
-					<a href="#" class="adv__btn btn">order now</a>
+					<a href="#" class="adv__btn btn">Order Now</a>
 				</div>
 
-				<img src="" alt="" class="adv__img">
+				<img src="img/hand.jpg" alt="" class="adv__img">
 			</div>
 		</section>
 
-		<footer class="footer">
-			<div class="container">
-				<div class="footer__info">
-					<h4 class="footer__label">Matcha Bar</h4>
-					<p class="footer__credo">Matcha is always a good idea</p>
-					<ul class="social__list">
-						<li class="social__item"><span class="social tw"></span></li>
-						<li class="social__item"><span class="social inst"></span></li>
-						<li class="social__item"><span class="social tiktok"></span></li>
-					</ul>
-
-					<nav class="footer__nav">
-						<ul class="footer__list">
-							<li class="footer__item"><a href="#" class="footer__link">Menu</a></li>
-							<li class="footer__item"><a href="#" class="footer__link">About Us</a></li>
-							<li class="footer__item"><a href="#" class="footer__link">Shop</a></li>
-							<li class="footer__item"><a href="#" class="footer__link">Contacts</a></li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-		</footer>
+		
 	</main>
+
+	<footer class="footer">
+		<div class="container footer__container">
+			<div class="footer__info">
+				<h4 class="footer__label">Matcha Bar</h4>
+				<p class="footer__credo">Matcha is always a good idea</p>
+				<ul class="social__list">
+					<li class="social__item"><a class="social tw"></a></li>
+					<li class="social__item"><a class="social inst"></a></li>
+					<li class="social__item"><a class="social tiktok"></a></li>
+				</ul>
+			</div>
+
+			<nav class="footer__nav">
+				<ul class="footer__list">
+					<li class="footer__item"><a href="#" class="footer__link">Home</a></li>
+					<li class="footer__item"><a href="#" class="footer__link">Menu</a></li>
+					<li class="footer__item"><a href="#" class="footer__link">Shop</a></li>
+					<li class="footer__item"><a href="#" class="footer__link">Contacts</a></li>
+
+					
+				</ul>
+			</nav>
+		</div>
+	</footer>
 </body>
 </html>
