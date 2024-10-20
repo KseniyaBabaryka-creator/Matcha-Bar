@@ -226,59 +226,9 @@
 	color: gray;
 }
 
-.section__adv{
-	margin-top: 5rem;
-	margin-bottom: 10rem;
-}
-
-.adv__container{
-	background: var(--green-color);
-	border-radius: 20px;
-	padding: 1rem 5rem;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
-}
-
-.adv__info{
-	max-width: 420px;
-	margin: 1rem 0 1rem 3rem;
-}
-
-.adv__title{
-	color: #fff;
-}
-
-.adv__text{
-	color: #fff;
-	line-height: 1.5;
-}
-
-.adv__btn{
-	background: #fff;
-	border: 1px solid #fff;
-	color: var(--dark-gray);
-}
-
-.adv__btn:hover{
-	background: transparent;
-	border: 1px solid #fff;
-	color: #fff;
-}
-
-.adv__btn:active{
-	background: var(--dark-green);
-	border: 1px solid var(--dark-green);
-}
 
 
-.adv__img{
-	width: 400px;
-	height: 300px;
-	filter: brightness(120%);
-	border-radius:10px;
-}
+
 
 @media(max-width:1200px){
 	.card{
@@ -292,24 +242,11 @@
 	.menu__item{
 		margin-right: 0 !important;
 	}
-
-	.adv__container{
-		margin: 3rem;
-		padding: 1rem 3rem;
-	}
 }
 
 @media(max-width: 992px){
 	.info__benefits{
 		flex-direction: column;
-	}
-	.adv__container{
-		flex-direction: column;
-	}
-
-	.adv__info{
-		max-width: 100%;
-		margin:0 0 3rem 0;
 	}
 
 	.menu__title, .menu__text{
@@ -318,13 +255,6 @@
 }
 
 @media(max-width: 600px){
-	.adv__img{
-		display: none;
-	}
-
-	.adv__info{
-		margin: 1rem;
-	}
 
 	html{
 		font-size: 14px;
