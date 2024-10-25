@@ -27,10 +27,12 @@
 .menu__classic{
 	list-style: none;
 	display: flex;
-	align-items: center;
+	align-items: stretch;
 	justify-content: space-evenly;
 	flex-wrap: wrap;
 	margin-bottom: 8rem;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .menu__classic a{
@@ -40,10 +42,12 @@
 .menu__item{
 	/* background: #fff; */
 	width: 400px;
-	height: 490px;
+	max-height: 490px;
+	flex: 1 0 30%;
 	display: flex;
 	flex-direction: column;
 	align-items:center;
+	align-self: stretch;
 	padding: 2rem;
 	margin-bottom: 4rem;
 	border: 1px solid lightgray;
@@ -56,7 +60,7 @@
 }
 
 .menu__item-img{
-	width: 350px;
+	max-width: 350px;
 	margin-bottom: 2rem;
 }
 
@@ -70,7 +74,7 @@
 }
 
 .last{
-	align-items: center;
+	align-items: stretch;
 	justify-content: center;
 	margin-right: 0 !important;
 	background-color: var(--green-color);
@@ -93,8 +97,13 @@
 	box-shadow: 0 0px 15px var(--green-color);
 }
 
-.last:hover .menu__item-name{
+.last:hover .menu__item-name, .last:hover .arrow{
 	color: var(--green-color);
+}
+
+.arrow{
+	color: #fff;
+	transition: color .3s ease;
 }
 
 .section-season{
@@ -118,11 +127,13 @@
 .season__list{
 	display: flex;
 	flex-direction: row;
-	align-items: center;
-	justify-content: space-evenly;
+	flex-wrap: wrap;
+	align-items: stretch;
+	justify-content: space-between;
 }
 
 .season__list .menu__item{
+	flex: 1 0 calc(33.33% - 2rem);
 	margin-bottom: 0;
 	background-color: #F6F2E6;
 	border: 1px solid #F6F2E6;
@@ -140,6 +151,91 @@
 
 .season__list .menu__item:hover{
 	transform: scale(1.05);
+}
+
+@media(max-width: 1200px){
+
+	.section-season .container{
+		margin: 3rem;
+		padding: 1rem 3rem;
+	}
+}
+
+@media(max-width: 768px){
+	html{
+		font-size: 14px;
+	}
+
+	.menu__classic{
+		justify-content: space-between;
+	}
+
+	.menu__item{
+		max-width: 300px;
+		flex: 0 0 45%;
+	}
+
+	.menu__item-img{
+		max-width: 260px;
+	}
+
+	.menu__item:not(:nth-child(2n)){
+		margin-right: 1rem;
+	}
+
+	.menu__item:not(:nth-child(3n)){
+		margin-right: 0;
+	}
+
+	.season__list{
+		justify-content: space-evenly;
+	}
+
+	.season__list .menu__item {
+		flex: 1 0 calc(50% - 1rem); 
+		margin-bottom: 1.5rem;
+  }
+
+  .season__list .menu__item:not(:nth-child(3n)){
+	margin-right: 0;
+	}
+
+	.season__list .menu__item:not(:nth-child(2n)){
+		margin-right: 2rem;
+	}
+
+	.season__list .menu__item:last-child{
+		margin-right: 0;
+	}
+
+	
+
+
+}
+
+@media (max-width: 600px){
+	.menu__classic{
+		flex-direction: column;
+
+	}
+
+	.menu__item{
+		/* max-width: 500px; */
+		flex: 1 1 80%;
+	}
+
+	.menu__item-img{
+		max-width: 400px;
+	}
+
+	.season__list .menu__item {
+		flex: 1 1 100%; 
+  }
+
+  .season__list .menu__item:not(:nth-child(2n)){
+		margin-right: 0;
+	}
+
 }
 
 
